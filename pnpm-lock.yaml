@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       '@rspack/cli':
-        specifier: ^0.7.0
+        specifier: ^0.7.1
         version: 0.7.1(@rspack/core@0.7.1(@swc/helpers@0.5.3))(@types/express@4.17.21)(webpack-cli@5.1.4(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4))
       '@rspack/core':
-        specifier: ^0.7.0
+        specifier: ^0.7.1
         version: 0.7.1(@swc/helpers@0.5.3)
       html-webpack-plugin:
         specifier: ^5.6.0
@@ -25,7 +25,7 @@ importers:
         version: 5.1.4(webpack@5.91.0)
     devDependencies:
       '@rsbuild/core':
-        specifier: ^0.7.0
+        specifier: ^0.7.3
         version: 0.7.3
       css-loader:
         specifier: ^7.1.2
@@ -3998,7 +3998,7 @@ snapshots:
 
   webpack-dev-middleware@5.3.4(webpack@5.91.0(webpack-cli@5.1.4)):
     dependencies:
-      colorette: 2.0.19
+      colorette: 2.0.20
       memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
@@ -4007,7 +4007,7 @@ snapshots:
 
   webpack-dev-middleware@6.1.2(webpack@5.91.0(webpack-cli@5.1.4)):
     dependencies:
-      colorette: 2.0.19
+      colorette: 2.0.20
       memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
@@ -4027,7 +4027,7 @@ snapshots:
       ansi-html-community: 0.0.8
       bonjour-service: 1.2.1
       chokidar: 3.5.3
-      colorette: 2.0.19
+      colorette: 2.0.20
       compression: 1.7.4
       connect-history-api-fallback: 2.0.0
       default-gateway: 6.0.3
