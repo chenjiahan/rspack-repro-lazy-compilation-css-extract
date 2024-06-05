@@ -1,6 +1,7 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import rspack from "@rspack/core";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isRunningWebpack = !!process.env.WEBPACK;
@@ -18,7 +19,15 @@ const config = {
   entry: {
     main: "./src/index",
   },
-  plugins: [new HtmlWebpackPlugin()],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [rspack.CssExtractRspackPlugin.loader, "css-loader"],
+      },
+    ],
+  },
+  plugins: [new HtmlWebpackPlugin(), new rspack.CssExtractRspackPlugin()],
   output: {
     clean: true,
     path: isRunningWebpack
@@ -27,7 +36,8 @@ const config = {
     filename: "[name].js",
   },
   experiments: {
-    css: true,
+    css: false,
+    lazyCompilation: true,
   },
 };
 
